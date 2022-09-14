@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+
+.common-quote-class {
+    font-family: 'Noto Serif TC', serif;
+    font-style:italic;
+}
+
+.common-quote-class>p:last-child{
+    font-family: serif;
+    text-align:right;
+} 
