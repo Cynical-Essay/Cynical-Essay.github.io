@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Cynical-Essay.github.io/sitemap.xml
