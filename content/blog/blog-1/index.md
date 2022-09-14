@@ -1,6 +1,6 @@
 ---
 title: "部落格架設筆記(1) - Hello Hugo"
-date: 2022-09-06T16:52:52+08:00
+date: 2022-09-14T13:04:52+08:00
 draft: false
 ---
 
@@ -183,21 +183,23 @@ Hugo 的[官方文件](https://gohugo.io/hosting-and-deployment/)針對部署到
 看過 [文件](https://gohugo.io/hosting-and-deployment/hosting-on-github/) 後，用一張圖來解釋的話，大約是這樣： 
 
 ![GithubPage](images/github-page.png)
-* **STEP1:**  網站作者在本機修改網站內容，並將異動上傳至 `main` 分支。
-* **STEP2:**  上傳至 `main` 分支的事件會觸發 Github Action，Runner 會 clone `main` 分支的內容，並對其執行`hugo --minify`指令產生靜態網站產出物，並將其上傳至`gh-page`分支。  
-
+* **STEP 1:**  網站作者在本機修改網站內容，並將異動上傳至 `main` 分支。
+* **STEP 2:**  上傳至 `main` 分支的事件會觸發 Github Action，Runner 會 clone `main` 分支的內容，對其執行`hugo --minify`指令產生靜態網站產出物，並將其上傳至`gh-pages`分支。  
+  
+  
 大體而言就是這兩個步驟，那我們就來一步步將該設定、該建立的處理起來：
+
 1. 建立一個名為 `{User Name}.github.io` 的 Repository，因為我們是免費仔，所以記得要設定成 **Public**。
 ![Create Repo](images/github-create-repo.png)
 
-2. 設定 GitHub Action 需要的[相關設定]()。
+2. 設定 GitHub Action 需要的相關設定。
 
 ```
 # hugo 專案根目錄
 mkdir -p .github/workflows
 touch .github/workflows/gh-pages.yml
 
-# 設定資訊在此，就複製貼上到 gh-pages.yml 檔內就好
+# 參考下方連結，複製貼上到 gh-pages.yml 檔內
 # https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action 
 ```
 
@@ -205,7 +207,7 @@ touch .github/workflows/gh-pages.yml
 
 ```
 # hugo 專案的根目錄
-git remote add origin git@github.com:Cynical-Essay/Cynical-Essay.github.io.git
+git remote add origin {repo url}
 git fetch origin
 ```
 
@@ -217,16 +219,21 @@ git commit -m "init hugo site"
 git push --set-upstream origin main
 ```
 
-接著可以在 Repository 的 Actions 頁籤確認是否正常。
+接著可以在 Repository 的 Actions 頁籤確認是否有正常觸發 Github Action。
 
 ![workflow](images/github-workflow.png)
 
-既然 Github Action 看起來正常，那如同文件所描述的，`gh-page` 分支內，應該會有靜態網站的產出物，趕緊來瞄一眼。
+既然 Github Action 看起來正常，那如同文件所描述的，`gh-pages` 分支內，應該會有靜態網站的產出物，趕緊來瞄一眼。
 
 ![workflow](images/gh-page.png)
 
-果然如此!!
+果然如此，真是神機妙算!!
 
-5. 最後到 Repository 下的 Setting 頁籤，左側的 Pages，設定 `gh-page` 為網站產出物，完成最後一哩路。
+5. 最後到 Repository 下 Setting 頁籤左側的 Pages，設定`gh-pages`為網站產出物，完成最後一哩路。
 
 ![workflow](images/pages-setting.png)
+
+接著讓子彈飛一下，大約一兩分鐘內設定就會生效了。
+
+於是第一篇文章兼部落格架設，就在一路的喃喃自語中誕生了。  
+歲月靜好，現世安穩，掰掰。
