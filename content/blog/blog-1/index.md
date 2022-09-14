@@ -1,7 +1,7 @@
 ---
 title: "部落格架設筆記(1) - Hello Hugo"
 date: 2022-09-06T16:52:52+08:00
-draft: true
+draft: false
 ---
 
 ## 前言 ##
@@ -190,12 +190,43 @@ Hugo 的[官方文件](https://gohugo.io/hosting-and-deployment/)針對部署到
 1. 建立一個名為 `{User Name}.github.io` 的 Repository，因為我們是免費仔，所以記得要設定成 **Public**。
 ![Create Repo](images/github-create-repo.png)
 
-2. 對本機 Hugo 專案設定Remote Repo。
+2. 設定 GitHub Action 需要的[相關設定]()。
+
+```
+# hugo 專案根目錄
+mkdir -p .github/workflows
+touch .github/workflows/gh-pages.yml
+
+# 設定資訊在此，就複製貼上到 gh-pages.yml 檔內就好
+# https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action 
+```
+
+3. 對本機 Hugo 專案設定Remote Repo。
+
 ```
 # hugo 專案的根目錄
 git remote add origin git@github.com:Cynical-Essay/Cynical-Essay.github.io.git
-git fetch origin main
+git fetch origin
+```
+
+4. 將異動上傳至 Remote Branch 上。
+
+```
 git add --all
 git commit -m "init hugo site"
 git push --set-upstream origin main
 ```
+
+接著可以在 Repository 的 Actions 頁籤確認是否正常。
+
+![workflow](images/github-workflow.png)
+
+既然 Github Action 看起來正常，那如同文件所描述的，`gh-page` 分支內，應該會有靜態網站的產出物，趕緊來瞄一眼。
+
+![workflow](images/gh-page.png)
+
+果然如此!!
+
+5. 最後到 Repository 下的 Setting 頁籤，左側的 Pages，設定 `gh-page` 為網站產出物，完成最後一哩路。
+
+![workflow](images/pages-setting.png)
