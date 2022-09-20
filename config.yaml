@@ -31,7 +31,7 @@ params:
 
   ShowReadingTime: true
   ShowShareButtons: false
-  ShowPostNavLinks: true
+  ShowPostNavLinks: false
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
@@ -101,9 +101,9 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    # URL: "https://github.com/Cynical-Essay/Cynical-Essay.github.io/main/content"
+    # Text: "Suggest Changes" # edit text
+    # appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
