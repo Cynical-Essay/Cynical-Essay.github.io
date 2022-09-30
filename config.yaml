@@ -17,6 +17,11 @@ minify:
   disableXML: true
   minifyOutput: true
 
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Diogenēs
