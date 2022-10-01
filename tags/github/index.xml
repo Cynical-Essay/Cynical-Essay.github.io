@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>現代犬儒派的軟工筆記</title>
-    <link>https://Cynical-Essay.github.io/</link>
-    <description>Recent content on 現代犬儒派的軟工筆記</description>
+    <title>Github on 現代犬儒派的軟工筆記</title>
+    <link>https://Cynical-Essay.github.io/tags/github/</link>
+    <description>Recent content in Github on 現代犬儒派的軟工筆記</description>
     <image>
       <url>https://Cynical-Essay.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://Cynical-Essay.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 20 Sep 2022 16:04:52 +0800</lastBuildDate><atom:link href="https://Cynical-Essay.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Sep 2022 16:04:52 +0800</lastBuildDate><atom:link href="https://Cynical-Essay.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>部落格架設筆記(2) - 以 Github Issues 作為部落格的留言功能</title>
       <link>https://Cynical-Essay.github.io/blog/blog-2/</link>
@@ -47,7 +47,6 @@ hugo version 就這樣，清楚明白，簡單粗暴，讚。
 Hugo 的 Config 檔預設為 Toml 格式，另外也支援 Yaml/Json 格式，建立專案時可透過 -f 來指定格式。
 hugo new site blog-hugo-cynical-essay -f yaml 可以看一下到底長了什麼出來</description>
     </item>
-    
     
   </channel>
 </rss>
