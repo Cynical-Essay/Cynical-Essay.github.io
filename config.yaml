@@ -22,6 +22,12 @@ sitemap:
   filename: sitemap.xml
   priority: 0.5
 
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Diogenēs
@@ -123,18 +129,23 @@ params:
     
 menu:
   main:
-    - identifier: 文章列表
-      name: 文章列表
-      url: /archives/
+    - identifier: 搜尋
+      name: 搜尋
+      url: /search/
       weight: 10
-    - identifier: 標籤
-      name: 標籤
-      url: /tags/
-      weight: 20
     - identifier: 主題分類
       name: 主題分類
       url: /posts/
+      weight: 20
+    - identifier: 標籤
+      name: 標籤
+      url: /tags/
       weight: 30
+    - identifier: 文章列表
+      name: 文章列表
+      url: /archives/
+      weight: 40
+
 
   #   - identifier: example
   #     name: example.org
