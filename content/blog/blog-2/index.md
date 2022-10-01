@@ -2,6 +2,10 @@
 title: "部落格架設筆記(2) - 以 Github Issues 作為部落格的留言功能"
 date: 2022-09-20T16:04:52+08:00
 draft: false
+tags:
+- 部落格架設
+- Hugo
+- Github
 ---
 
 ## 前言 ##

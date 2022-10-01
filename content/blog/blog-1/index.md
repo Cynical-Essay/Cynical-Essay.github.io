@@ -2,6 +2,10 @@
 title: "部落格架設筆記(1) - Hello Hugo"
 date: 2022-09-14T13:04:52+08:00
 draft: false
+tags:
+- 部落格架設
+- Hugo
+- Github
 ---
 
 ## 前言 ##
