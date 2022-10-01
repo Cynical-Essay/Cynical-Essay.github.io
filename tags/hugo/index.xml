@@ -12,10 +12,10 @@
     <lastBuildDate>Tue, 20 Sep 2022 16:04:52 +0800</lastBuildDate><atom:link href="https://Cynical-Essay.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>部落格架設筆記(2) - 以 Github Issues 作為部落格的留言功能</title>
-      <link>https://Cynical-Essay.github.io/blog/blog-2/</link>
+      <link>https://Cynical-Essay.github.io/posts/blog/blog-2/</link>
       <pubDate>Tue, 20 Sep 2022 16:04:52 +0800</pubDate>
       
-      <guid>https://Cynical-Essay.github.io/blog/blog-2/</guid>
+      <guid>https://Cynical-Essay.github.io/posts/blog/blog-2/</guid>
       <description>前言 部落格雛形建立並 Host 在平台後，接下來要慢慢將各種 細節 / 機制 建立起來。而其中一項就是留言功能了。畢竟文章寫都寫了，哪怕是看到一兩個讀者的回饋，對寂寞的部落格作者而言都會起到激勵的作用。
 本文紀錄透過 Utterances 整合 Github Issues 至 Hugo 的過程，提供一個讓讀者能夠針對我們的文章回饋想法的功能。
 始於簡介 Comments Service With Hugo Comments Service，留言服務，提供使用者對網站 or 網路社群留言的功能。 使用者可以使用如 Disqus / Facebook Comments 等服務提供商提供的現有服務，也可以透過 Isso 等留言服務開源專案自行 Host。自行 Host 的特性是資訊不會存在第三方的服務內，可控性較高， 缺點則是需要付出 架設 / 維運 的成本，使用現有服務則反之，如何選擇就依據各自使用的情境來評估了。
@@ -26,10 +26,10 @@ Utterances 以 Typescript 撰寫的開源留言服務工具。透過整合 Githu
     
     <item>
       <title>部落格架設筆記(1) - Hello Hugo</title>
-      <link>https://Cynical-Essay.github.io/blog/blog-1/</link>
+      <link>https://Cynical-Essay.github.io/posts/blog/blog-1/</link>
       <pubDate>Wed, 14 Sep 2022 13:04:52 +0800</pubDate>
       
-      <guid>https://Cynical-Essay.github.io/blog/blog-1/</guid>
+      <guid>https://Cynical-Essay.github.io/posts/blog/blog-1/</guid>
       <description>前言 透過部落格學習新技術與紀錄生活，一直是個不錯的選擇。
 近期無意中發現除了過往使用如 Blogger / Medium / WP 等部落格平台服務外，也可以選擇透過 靜態網站生成框架 來撰寫部落格。
 好奇心加上以往的部落格往往寫不到幾篇就放著長草，想要一雪前恥。於是有點遞迴的，這個部落格的誕生，就從一篇如何透過 靜態網站生成框架 架設本部落格的文章作為起點。
